@@ -1,0 +1,342 @@
+*{
+	padding: 0;
+	margin: 0;
+	font: normal 14px Tahoma;
+	box-sizing: content-box;
+}
+div,body,h1,h2,h3,h4,h5,h6,nav,ul,li,a{
+	display: block;
+}
+body{
+	text-align: left;
+	margin: 20px;
+}
+p{
+	text-align: justify;
+	margin: 10px;
+}
+
+h1{
+	font: bold 25px  'helvetica';
+	letter-spacing: .03em;
+}
+h2{
+	font: bold 25px Cambria;
+}
+h3{
+	font: bold 20px Arial;
+}
+h4{
+	font: bold 15px Tahoma;
+}
+input{
+	text-align: left;
+	float: left;
+}
+#seperator{
+	height: 50px;
+	background: #EFF8F4;
+	text-align: center;
+}
+#seperator h1{
+	text-align: center;
+	padding:  .5rem;
+}
+#wrapper{
+	max-width: 80%;
+	margin: 0px auto;
+}
+#topo{
+	background: #C6F1DB;
+	padding: 3px;
+	text-align: center;
+}
+#top img{
+	width: 1090px;
+	height: 0px;
+}
+nav#nav{
+	background: #9EF4C8;
+	height: 40px;
+	text-align: right;
+	width: 1100px;
+	padding-top: 5px;
+	margin: 0 auto;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+#nav nav ul li{
+	list-style: none;
+	width: 150px;
+
+}
+#nav nav ul li a{
+	
+	font: 600 20px Tahoma;
+	text-decoration: none;
+	color: rgba(0, 0, 204, 0.661);
+	text-align: center;
+
+}
+#navadmin{
+	background: #9EF4C8;
+	height: 40px;
+	text-align: right;
+	width: 100%;
+	margin: 0 auto;
+
+}
+#navadmin nav ul li{
+	list-style: none;
+	display: inline-block;
+	font: bold 20px Tahoma;
+	text-align: center;
+	margin-right: 30px;
+
+}
+#navadmin nav ul li a{
+	
+	font: bold 20px Tahoma;
+	text-decoration: none;
+	color: #00c;
+	text-align: center;
+
+}
+
+
+
+#bottom{
+	background: #9EF4C8;
+	height: 50px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+div#lands-info {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+}
+
+div#lands-info .card .card-image img {
+	width: 100%;
+}
+
+div#lands-info .card {
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+div#lands-info .card .card-data {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	justify-content: flex-start;
+	position: relative;
+	padding: 1rem .5rem;
+	color: #0e8045;
+}
+
+div#lands-info .card .card-data .price {
+	position: absolute;
+	right: 1rem;
+	top: 1rem
+}
+div#lands-info .card .card-data .land-type {
+	position: absolute;
+	right:0rem;
+	top: -13.5rem;
+	padding: .2rem 1rem;
+	border: 1px solid #9EF4C8;
+	background: #fff;
+	border-radius: 1rem 0rem 0rem 1rem;
+}
+
+div#lands-info .card .card-data button {
+	margin: 0 auto;
+}
+
+div#lands-info .card .card-data button a {
+	text-decoration: none;
+	cursor: pointer;
+	color: #0e8045;
+	font-weight: 700;
+}
+
+#middle{
+	/* clear: both; */
+	min-height: 550px;
+	background: #EFF8F4;
+	padding: 20px;
+	max-width: 100%;
+}
+#login{
+	margin: 20px 400px;
+	position: absolute;
+}
+#login ul li {
+	
+	font: normal 14px Calibri;
+	text-align: left;
+	margin-top: 10px;
+
+}
+#login ul li input,#middle input,select{
+	width: 200px;
+	height: 30px;
+	padding: 2px;
+	border: 1px solid #9EF4C8;
+	border-radius: 5px;
+	text-align: left;
+}
+#login ul li button,#middle button{
+	width: 200px;
+	height: 40px;
+	padding: 2px;
+	border: 2px solid #9EF4C8;
+	border-radius: 5px;
+	text-align: center;
+	background: #C8F5DE;
+	cursor: pointer;
+}
+cite{
+	color: red;
+	font: italic 14px Arial;
+}
+#middle h3{
+	text-align: left;
+}
+
+
+ul.middle-card__stat {
+	display: flex;
+	gap: 1rem;
+	margin: 0 auto;
+	justify-content: center;
+}
+ul.middle-card__stat li{
+	width: 20%;
+	height: 100px;
+	border: 1px solid #0e8045;
+	border-radius: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	color: #0e8045;
+	font-size: 1.2rem;
+	background: #fff;
+}
+
+ul.middle-card__stat li:nth-child(even){
+	width: 20%;
+	height: 100px;
+	border: 1px solid #fff;
+	border-radius: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	color: #fff;
+	font-size: 1.2rem;
+	background: darkcyan;
+
+}
+
+table {
+	border: 1px solid #ddd;
+	margin: 0 auto;
+	width: 100%;
+}
+
+table th, 
+table th h3 {
+	text-align: center;
+	color: #0e8045;
+	background: #C8F5DE;
+	padding:.5rem 0rem;
+	font-weight: bold;
+}
+
+table tr td{
+	padding: .5rem .3rem;
+}
+
+table tr:nth-child(even){
+	background: #C8F5DE50;
+}
+
+a {
+	text-decoration: none;
+	color: #00c;
+	font-weight: 700;
+}
+
+h3.btn-add {
+	margin: 1rem 0rem;
+	background: #0e8045;
+	border-radius: 3rem;
+	padding: .5rem 1.5rem;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h3.btn-add a {
+	color: #fff;
+}
+
+td.action {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+}
+
+a.btn-delete {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #9e1010;
+	color: #fff;
+	border-radius: 3rem;
+	padding: .2rem 1rem;
+}
+
+a.btn-edit {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #9e9710;
+	color: #fff;
+	border-radius: 3rem;
+	padding: .2rem 1rem;
+}
+
+a.btn-confirm {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #0e8045;
+	color: #fff;
+	border-radius: 3rem;
+	padding: .2rem 1rem;
+}
+
+a.btn-cancel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #ac0606f6;
+	color: #fff;
+	border-radius: 3rem;
+	padding: .2rem 1rem;
+}
